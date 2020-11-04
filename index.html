@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="col">
+      <form class="was-validated">
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="inputEmail4">Имя</label>
+              <input type="text" class="form-control is-valid" placeholder="Имя" required>
+              <div class="invalid-feedback">
+                Необходимо ввести свое имя
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="inputEmail4">Фамилия</label>
+              <input type="text" class="form-control is-valid" placeholder="Фамилия" required>
+              <div class="invalid-feedback">Необходимо ввести свою фамилию</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="inputPassword4">Персональный код</label>
+              <input type="text" class="form-control is-valid" placeholder="ID" required>
+              <div class="invalid-feedback">Введённый персональный код должен совпадать со стандартным форматом принятым в стране</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="inputSex">Пол</label>
+              <select class="custom-select">
+                <option value="1">Мужской</option>
+                <option value="2">Женский</option>
+              </select>
+              <small class="form-text text-muted">Выберите свой пол</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="inputBirthday">Дата рождения</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="">Дата</span>
+                </div>
+                <input type="text" class="form-control is-valid" placeholder="День" required>
+                <input type="text" class="form-control is-valid" placeholder="Месяц" required>
+                <input type="text" class="form-control is-valid" placeholder="Год" required>
+                <div class="invalid-feedback">Введите свою существующую дату рождения в корректном формате (день/месяц/год)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="custom-control custom-checkbox mb-3">
+              <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+              <label class="custom-control-label" for="customControlValidation1">Мне 18 или более лет</label>
+              <div class="invalid-feedback">Необходимо потвердить для продолжения</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="">Предоставляемые варианты товара</label>
+              <div class="row">
+                <div class="col-4 d-flex">
+                  <div class="card text-white bg-secondary mb-3" style="margin-bottom: 1rem;">
+                    <div class="card-body flex-fill">
+                      <h5 class="card-title">Предоставляемый вариант товара</h5>
+                      <p class="card-text">Описание</p>
+                      <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option1"> Выбрать
+                      </label>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-white">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 d-flex">
+                  <div class="card text-white bg-secondary mb-3" style="margin-bottom: 1rem;">
+                    <div class="card-body flex-fill">
+                      <h5 class="card-title">Предоставляемый вариант товара</h5>
+                      <p class="card-text">Описание</p>
+                      <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2"> Выбрать
+                      </label>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-white">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 d-flex">
+                  <div class="card text-white bg-secondary mb-3" style="margin-bottom: 1rem;">
+                    <div class="card-body flex-fill">
+                      <h5 class="card-title">Предоставляемый вариант товара</h5>
+                      <p class="card-text">Описание</p>
+                      <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3"> Выбрать
+                      </label>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-white">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="">Выбор варианта доставки</label>
+              <div class="row">
+                <div class="col">
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Кнопка с data-target
+                  </button>
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    Кнопка с data-target
+                  </button>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      1Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                  </div>
+                  <div class="collapse" id="collapseExample2">
+                    <div class="card card-body">
+                      2Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation2" required>
+                <label class="custom-control-label" for="customControlValidation2">Я потверждаю условия предоставления услуг</label>
+                <div class="invalid-feedback">Необходимо потвердить для продолжения</div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script language="javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+  <script language="javascript" src="js/popper.min.js"></script>
+  <script language="javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
