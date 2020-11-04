@@ -61,7 +61,7 @@
                 <input type="text" class="form-control is-valid" placeholder="День" required>
                 <input type="text" class="form-control is-valid" placeholder="Месяц" required>
                 <input type="text" class="form-control is-valid" placeholder="Год" required>
-                <div class="invalid-feedback">Введите свою существующую дату рождения в корректном формате (день/месяц/год)</div>
+                <div class="invalid-feedback">Введите свою существующую дату рождения в корректном формате (dd/mm/yyyy)</div>
               </div>
             </div>
           </div>
@@ -132,56 +132,59 @@
               <label for="">Выбор варианта доставки</label>
               <div class="row">
                 <div class="col">
-                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Прислать по почте
-                  </button>
-                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                    Заберу из почтового автомата
-                  </button>
-                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-                    Заберу сам из представительства
-                  </button>
-                  <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">Адрес</span>
+                  <div id="content-items">
+                    <button class="btn btn-primary" id="sentByPost" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                      Прислать по почте
+                    </button>
+                    <button class="btn btn-primary" id="sentByPostAutomat" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                      Заберу из почтового автомата
+                    </button>
+                    <button class="btn btn-primary" id="sentByAgency" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                      Заберу сам из представительства
+                    </button>
+                    <div class="collapse show" id="collapseExample" data-parent="#content-items">
+                      <div class="card card-body">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="">Адрес и почтовый индекс</span>
+                          </div>
+                          <input type="text" class="form-control is-valid" placeholder="Адрес" required>
+                          <input type="text" class="form-control is-valid" placeholder="Почтовый индекс" required>
+                          <div class="invalid-feedback">Введите свой адрес и ваш почтовый индекс</div>
                         </div>
-                        <input type="text" class="form-control is-valid" placeholder="Адрес" required>
-                        <input type="text" class="form-control is-valid" placeholder="Почтовый индекс" required>
-                        <div class="invalid-feedback">Введите свой адрес и ваш почтовый индекс</div>
                       </div>
                     </div>
+                    <div class="collapse" id="collapseExample2" data-parent="#content-items">
+                      <div class="card card-body">
+                        <select class="custom-select" required>
+                          <option value="">Выберите почтовый автомат...</option>
+                          <option value="1">Почтовый автомат 1</option>
+                          <option value="2">Почтовый автомат 2</option>
+                          <option value="2">Почтовый автомат 3</option>
+                          <option value="2">Почтовый автомат 4</option>
+                          <option value="2">Почтовый автомат 5</option>
+                        </select>
+                      </select>
+                      <small class="form-text text-muted">Выберите наиболее удобный почтовой автомат для вас</small>
+                    </div>
                   </div>
-                  <div class="collapse" id="collapseExample2">
+                  <div class="collapse" id="collapseExample3" data-parent="#content-items">
                     <div class="card card-body">
                       <select class="custom-select" required>
-                        <option value="">Выберите почтовый автомат...</option>
-                        <option value="1">Почтовый автомат 1</option>
-                        <option value="2">Почтовый автомат 2</option>
-                        <option value="2">Почтовый автомат 3</option>
-                        <option value="2">Почтовый автомат 4</option>
-                        <option value="2">Почтовый автомат 5</option>
+                        <option value="">Выберите адрес представительства...</option>
+                        <option value="1">Адрес представительства 1</option>
+                        <option value="2">Адрес представительства 2</option>
+                        <option value="2">Адрес представительства 3</option>
+                        <option value="2">Адрес представительства 4</option>
+                        <option value="2">Адрес представительства 5</option>
                       </select>
-                    </select>
-                    <small class="form-text text-muted">Выберите наиболее удобный почтовой автомат для вас</small>
-                  </div>
-                </div>
-                <div class="collapse" id="collapseExample3">
-                  <div class="card card-body">
-                    <select class="custom-select" required>
-                      <option value="">Выберите адрес представительства...</option>
-                      <option value="1">Адрес представительства 1</option>
-                      <option value="2">Адрес представительства 2</option>
-                      <option value="2">Адрес представительства 3</option>
-                      <option value="2">Адрес представительства 4</option>
-                      <option value="2">Адрес представительства 5</option>
-                    </select>
-                    <small class="form-text text-muted">Выберите адрес наиболее удобного представительства для вас</small>
+                      <small class="form-text text-muted">Выберите адрес наиболее удобного представительства для вас</small>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <small class="form-text text-muted">Выберите наиболее подходящий для вас вариант</small>
           </div>
         </div>
         <div class="col-12">
